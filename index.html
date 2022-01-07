@@ -18,13 +18,13 @@
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" onclick="showAll()">All notes</a>
+                    <a class="nav-link" aria-current="page" href="#" onclick="showAll(); changeTab(this);">All notes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="showCompleted()">Completed</a>
+                    <a class="nav-link" href="#" onclick="showCompleted(); changeTab(this);">Completed</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="showNotCompleted()">Not completed</a>
+                    <a class="nav-link" href="#" onclick="showNotCompleted(); changeTab(this);">Not completed</a>
                 </li>
             </ul>
         </nav>
@@ -32,7 +32,7 @@
 
     <div id="body">
 
-        <div class="container">
+        <div class="container" style="position: relative;">
 
             <div class="input-group mt-3">
                 <span class="input-group-text">Add your note</span>
@@ -48,8 +48,8 @@
                 <button class="btn btn-primary" type="submit" onclick="clearAll()">Clear all</button>
             </div>
 
-            <ul style="list-style: none;" id="list">
-
+            <ul style="list-style: none; position: absolute; left: 0;" id="list">
+ 
                 <li id="item" onClick="markAsCompleted(this)">
                     Example
                 </li>

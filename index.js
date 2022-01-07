@@ -99,6 +99,20 @@ function markAsCompleted(element) {
 }
 
 
+
+
+function changeTab(tab) {
+    let tabs = document.getElementsByClassName("nav-link");
+    for(let i = 0; i < tabs.length; i++)
+    {
+        tabs[i].setAttribute("style", "border: none");
+    }
+
+    tab.setAttribute("style", "border: 1px solid red;");
+    console.log(tabs); 
+}
+
+
 //TODO: Complete this task using the code belows
 
 // function addNote() {
