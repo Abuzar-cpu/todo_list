@@ -51,7 +51,7 @@ function clearAll() {
 
 function showAll() {
     list.innerHTML = "";
-    for(let i = 0 ; i < notCompleted.length; i++)
+    for(let i = notCompleted.length - 1 ; i >= 0; i--)
     {
         var a = document.createElement("li");
         a.setAttribute("id", "item");
@@ -84,7 +84,7 @@ function showCompleted() {
 
 function showNotCompleted() {
     list.innerHTML = "";
-    for(let i = 0 ; i < notCompleted.length; i++)
+    for(let i = notCompleted.length - 1 ; i >= 0; i--)
     {
         var a = document.createElement("li");
         a.setAttribute("id", "item");
