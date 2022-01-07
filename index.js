@@ -23,6 +23,7 @@ function addNote() {
             list.append(a);
         }
     }
+    showAll();
 }
 
 function clearAll() {
@@ -117,6 +118,8 @@ function changeTab(tab) {
     console.log(tabs); 
 }
 
+
+changeTab(document.getElementsByClassName("nav-link")[0]);
 
 //TODO: Complete this task using the code belows
 
