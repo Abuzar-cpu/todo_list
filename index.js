@@ -35,6 +35,11 @@ function clearAll() {
             allNotes.pop();
         }
 
+        while(completed.length != 0)
+        {
+            completed.pop();
+        }
+
         while(notCompleted.length != 0)
         {
             notCompleted.pop();
