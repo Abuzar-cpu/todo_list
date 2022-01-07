@@ -115,7 +115,7 @@ function changeTab(tab) {
     }
 
     tab.setAttribute("style", "border: 1px solid red;");
-    console.log(tabs); 
+    // console.log(tabs); 
 }
 
 
