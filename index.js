@@ -45,12 +45,21 @@ function clearAll() {
 
 function showAll() {
     list.innerHTML = "";
-    for(let i = 0 ; i < allNotes.length; i++)
+    for(let i = 0 ; i < notCompleted.length; i++)
     {
         var a = document.createElement("li");
         a.setAttribute("id", "item");
         a.setAttribute("onClick", "markAsCompleted(this)")
-        a.innerText = allNotes[i];
+        a.innerText = notCompleted[i];
+        list.append(a);
+    }
+
+    for(let i = 0 ; i < completed.length; i++)
+    {
+        var a = document.createElement("li");
+        a.setAttribute("id", "item");
+        a.setAttribute("style", "text-decoration: line-through; background-color: grey; color: #fff;")
+        a.innerText = completed[i];
         list.append(a);
     }
 }
