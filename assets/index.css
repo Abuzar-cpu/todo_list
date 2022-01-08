@@ -7,8 +7,20 @@
 
 #item:hover{
     color: white;
-    transition-delay: 0.3s;
-    transition-duration: 2s;
     transition-timing-function: linear;
     background-color: rgb(113, 113, 236);
+}
+
+.completed{
+    transition: all;
+    transition-duration: 1.5s;
+    text-decoration: line-through;
+    background-color: grey;
+    color: #fff;
+}
+
+.notCompleted{
+    transition: all;
+    transition-duration: 1.5s;
+    color: red;
 }
