@@ -18,7 +18,8 @@
 }
 
 .nav-link:hover{
-    color: red;
+    background-color: red;
+    color: #fff !important;
 }
 
 .completed{

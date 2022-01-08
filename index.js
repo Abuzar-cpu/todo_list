@@ -161,7 +161,7 @@ function changeTab(tab) {
         tabs[i].setAttribute("style", "border: none");
     }
 
-    tab.setAttribute("style", "border: 1px solid red;");
+    tab.setAttribute("style", "color: red;");
     activeTab = allTabs.indexOf(tab.innerText);
 }
 /**End of change tab method */
