@@ -1,5 +1,5 @@
 #item{
-    width: 50vw;
+    width: 83.5vw;
     padding: 2vh 3vw;
     margin-top: 2vh;
     border: 1px solid red;
@@ -11,8 +11,18 @@
     background-color: rgb(113, 113, 236);
 }
 
+.nav-link{
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+.nav-link:hover{
+    color: red;
+}
+
 .completed{
-    transition: all;
+    transition-property: all;
     transition-duration: 1.5s;
     text-decoration: line-through;
     background-color: grey;
@@ -20,7 +30,17 @@
 }
 
 .notCompleted{
-    transition: all;
+    transition-property: all;
     transition-duration: 1.5s;
     color: red;
+}
+
+.completed:hover{
+    background-color: rgb(113, 113, 236);
+    border: none;
+}
+
+.notCompleted:hover{
+    background-color: rgb(113, 113, 236);
+    border: none;
 }
