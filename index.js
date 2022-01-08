@@ -5,6 +5,8 @@ let activeTab = 0;
 
 let list = document.querySelector("#list");
 
+alert("Please add a new note to use features");
+
 /*Adds new note as not completed*/
 function addNote() {
     if(this.document.querySelector("#userInput").value != "")
